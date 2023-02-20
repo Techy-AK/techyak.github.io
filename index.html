@@ -1,0 +1,787 @@
+                                                     <!-- Made By Techy Ak -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechyAk</title>
+    <style>
+
+
+
+
+ .Logo {
+        background-image: url(logo.png);
+        background-position-y: top;
+        background-position-x: left;
+        height: 50px;
+        width:850px;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        padding-left: 0px;
+        position: absolute;
+        margin-top: 10px;
+
+       }
+
+       nav {
+    overflow:auto;
+    background: black;
+    margin-top: 5px;
+        margin-left: 10px;
+    background-position-x: left;
+    border-radius: 35px;
+}
+
+
+
+
+.Logo {
+    height: 150px;
+        /* width:100%; */
+        /* margin: 0 0 0 250px; */
+        list-style:none;
+        text-decoration: none;
+        color: white;
+        
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+   display: block;
+   padding: 20px 15px;
+   color: white;
+}
+
+ul {
+    padding: 0 0 10;
+    margin: 150px;
+    list-style: none;
+}
+
+
+        
+       .Img {
+        height: 250px;
+        width: 1350px;
+
+       }
+       /* .Img{
+        background-image: url(Welcome.png);
+        background-repeat:round;
+        margin: 0;
+        padding: 0;
+        
+        
+       } */
+       
+       
+       * {
+        font-weight: lighter;
+        font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+        color: rgb(153, 153, 153);
+       }
+       .Bottom{
+        height: 800px;
+       }
+
+       li a:hover {
+        background: rgb(255, 255, 255);
+        color: red;
+        text-transform: uppercase;
+       }
+    
+       nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 20px ;
+       }
+       .logo img {
+        position: absolute;
+       }
+
+       button {
+        border: none;
+        background: #4fc76d;
+        margin: 20px;
+        border-radius: 30px;
+        padding: 15px;
+       }
+       .Section {
+        margin: 10px 10px;
+        height: 100px;
+        position: initial;
+       }
+       
+       .searchBox {
+        padding: 20px;
+                height: 100%;
+                width: 95%;
+        outline: none;
+        border: none;
+        transition: 0.08s;
+        background: transparent;
+       }
+
+       .searchBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+  .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+}
+
+
+       *{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+       }
+
+
+       body{
+	line-height: 1.5;
+}
+*{
+	/* margin:0;
+	padding:0; */
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin: 85px;
+    padding: 0 0 10px;
+    padding-left: 0px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 55px 0;
+}
+.footer-col{
+   width: 28%;
+   /* padding: 0 15px; */
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #b12424;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+
+.footer-col {
+    padding-left: 0 0 10px;
+}
+.h4 {
+    margin: 0;
+    padding: 0;
+    padding-left: 0 0 5px;
+}
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid rgb(47, 255, 245);
+    padding: 5px;
+}
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+form:hover input{
+    display: block;
+}
+form:hover .fa{
+    background: #07051a;
+    color: rgb(41, 203, 209);
+}
+
+
+
+   
+
+    </style>
+
+
+</head>
+<body>
+    <div class="Logo">
+          
+        <!-- <a href="#"><img src="/lgo.png" alt="Logo"></a> -->
+    </div> 
+
+    <div class="Section">
+        <nav>
+            <ul>
+                
+                    <li><a href="#">Home</li></a>
+                    <li><a href="file:///H:/CSS/abouthome.html" target="_blank">About Us</li></a>
+                    <li><a href="file:///H:/CSS/moreinfo.html" target="_blank">More Info</li></a>
+                    <li><a href="file:///H:/CSS/moreplats.html" target="_blank">Other Platforms</li></a>
+            </ul>
+            
+            <a href="file:///H:/CSS/email.html" target="_blank">
+                <button id="Contact" name="button" value="OK" type="button" onclick="hello()" target="_blank" > Contact Us</button> </a>
+                <!-- <div class="Search">
+                      
+                <input type="text" name="search" id="search" placeholder="Search" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
+            <!-- <div class="searchBox">
+
+                <input class="searchInput"type="text" name="" placeholder="Search">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">
+                        Search
+                    </i>
+                </button>
+            </div> -->
+            <form action=””>
+                <i class=”fa fa-search”></i><input type=”search” placeholder="Search"  here …”>
+              </form>
+              
+    
+            <script>
+                function hello(){
+                    alert("Contact Us")
+             
+            }
+            function find(Website){
+
+            }
+            </script>
+            <script src="https://kit.fontawesome.com/fda6f71da3.js" crossorigin="anonymous"></script>
+       </nav>
+
+    <div class="Img">
+        
+    </div>
+    
+
+    <div class="New" > 
+        <br>
+        <br>
+        <hr>
+      <h1> Website Ideas </h1> <BR>
+      <BR>
+      <p> 
+        <header>
+        First, let's talk about the type of website you need.<BR>
+        
+    There are several main types of websites that you could create. Each type is going to have its own design and structural requirements and <BR> its own unique purpose. Here are the main ones.<BR>
+        
+    <h3> 1. E-commerce Websites </h3><BR>
+        Any website that sells goods online is an e-commerce site. It could be a stand-alone store or a store that's just a small part of the <BR>business (like the Google store that sells T-shirts and cups with the Google logo).<BR>
+        
+        An e-commerce site usually consists of a homepage, category pages, products pages, and a checkout page. It also has various promotional <BR>pages, a referral/loyalty program, and a customer service page where consumers go to get answers to their questions.<BR>
+        
+        <h3> 2. Blogs </h3><BR>
+        Blogs are one of the most popular types of websites on the internet. There are over 600 million blogs online today and billions of blog<BR> posts. Blogs provide a very powerful mechanism for brands to increase brand awareness, tell their brand story, attract readers <BR>through content marketing, and make money through affiliate marketing. The two most popular blogging platforms are WordPress and <BR>Medium and many publications are built and run on them.<BR>
+        
+        <h3>  3. Online Courses </h3><BR>
+        There are a ton of entrepreneurs that offer online courses. This is a great way to leverage your experience and expertise in a <BR>particular subject and grow an engaged audience around it.<BR>
+        
+        There are stand-alone course sites that are either custom made or you can build and host them on platforms like Thinkific, Podia, or <BR>Teachable. There are also course platforms like Coursera or Udemy, where course creators upload and showcase their offerings.<BR>
+        
+        <h3> 4. Service Websites </h3><BR>
+        This category includes any website that sells services. Think of your local tattoo artist or massage therapist. A service site usually <BR>has pages that describe its services, a homepage, and some way to checkout and book an appointment. <BR>
+        
+        <h3> 5. News and Trends </h3><BR>
+        Online news publications are another great business model. They are sites like MSNBC or TechCrunch that offer their readers news <BR>articles about a variety of subjects. Some news sites have online shops where they not only sell subscriptions to the site but the<BR> various products that they write about.<BR>
+        
+        <h3> 6. Personal Portfolio or CV </h3><BR>
+        A lot of freelancers or consultants create their own personal portfolios or resume sites. These are sites that showcase their work, <BR>their projects, and have a simple contact form. They are meant to showcase their personality, attract potential buyers, or promote <BR>a newsletter.<BR>
+        
+        <h3> 7. Review Sites </h3><BR>
+        Online reviews are increasingly becoming a powerful tool for e-commerce. Studies show that 93% of consumers use online reviews to make <BR>shopping decisions.<BR>
+        
+        There are review sites like Yelp or smaller review blogs. E-commerce platforms also use product reviews on every product and category <BR>page. Amazon reviews are the most famous example of that.<BR>
+        
+        <h3> 8. Event Sites </h3><BR>
+        Events sites are a subset of services. They are websites that display various events, both online and offline, and sometimes sell <BR>tickets to these events. <BR>
+    </header>
+        
+       
+        <h2> Website Topics </h2><BR>
+        One way to pick the best type of website you want to create is to narrow it down to a few specific website content topics that you want <BR>to cover. Select your topics based on the following questions:<BR>
+        
+        Is your site going to be content-heavy?<BR>
+        Are you going to sell physical products or services?<BR>
+        Will you be writing news?<BR>
+        What is the purpose of your website?<BR>
+        Which industries are you most familiar with?<BR>
+        Once you answer these questions, you'll have a better idea about the kind of website you want to create.<BR>
+        
+       <h2> Website Ideas for Beginners </h2><BR>
+        Here are a few website ideas to give you even more inspiration when building your own site. Take what you find interesting and<BR> applicable and leave the rest.<BR>
+        
+        <h3> 1. Personal Blog </h3><BR>
+        One of the best ways to build an engaged audience online is to start your own blog. Choose a topic that you are passionate about and<BR> knowledgeable about. Pick a blog topic by looking at similar blogs or conducting some keyword research.<BR>
+        
+        <h3> Drop-Shipping Site </h3><BR>
+A really popular way to sell products online is through drop-shipping. This involves sourcing your products on a site like Alibaba and then <BR>have the manufacturer ship the product directly to your consumers.<BR>
+
+Use a platform like Shopify or BigCommerce to set it all up.<BR>
+
+<h3> 3. Start an Online Course </h3><BR>
+Another great way to promote yourself is by developing an online course. Creating video content is much more affordable today than even a few<BR> years ago.<BR>
+
+Buy a camera, a teleprompter, some good lighting, and you are ready to go. You can even record yourself using Zoom or Google Meet.<BR>
+
+<h3>4. Sell Handmade Items </h3><BR>
+This one will take a bit more time and isn't for the faint of heart. It's for creators of products that would like to take their hobby to the <BR>next level. You can also sell other people's handmade products and make a commission.<BR>
+
+5. Local Events/Travel Destinations </h3><BR>
+If you enjoy meeting people and traveling, then this idea is for you. Create a site where you not only offer advice on the best local travel<BR> spots and tourist destinations, but you can also organize meetups and local tours.<BR>
+
+<h3> 6. DIY Items and Manuals </h3><BR>
+DIY is a booming category. People like to buy handmade products, but what they like even more is building their own products.<BR>
+
+You can sell the products themselves, product kits, or product manuals that direct the users to source their own materials and build their <BR>own products.<BR>
+
+<h3> 7. Local History Site </h3><BR>
+<h4>This is a type of news site that provides interesting history and local tales about a specific place. This is great for someone who really<BR> likes where they live and connects to their city's roots.<BR>
+
+You can combine different website elements into this one — reviews of specific sites, local tours, information about local businesses, and much <BR>more.</h4><BR>
+
+<h3> 8. Interviews Site </h3><BR>
+<h4>This idea is for anyone who likes to talk to interesting people and hear fascinating stories. The idea is to build a site where you host<BR> interviews with experts or influencers in any field and make them available to the public. You can monetize the site either through a <BR>membership fee (selling access to the interview content) or through sponsorships and advertising.</h4><BR>
+
+<h2> 9. Book Reviews Site </h2><BR>
+<p> Love to review books and get recommendations for new books to read. Book review blogs have been around for years and do pretty well. There <BR>are a lot of new subgenres or special interest topics that you can focus on. So pick a niche to target a specific audience and you will be <BR>successful. </p><BR>
+
+
+    
+    </p> 
+    <BR>
+        <BR>
+
+    </div>
+
+    
+
+    <hr>
+    <div class="Bottom"> 
+        <h2> Website Design Ideas </h2><BR>
+        <p>Creating a website can be quite challenging for beginners. Most people don't know where to start. They might want to start with a<BR> simple website builder, but then realize that it doesn't have all the features they need. A platform like WordPress or Magento <BR>can seem daunting to beginners. It's all about figuring out what your needs are.<BR>
+        
+        Here are a few criteria to consider before picking your ideal website platform.<BR>
+        
+            <BR>
+       Price - What is your monthly budget?<BR>
+       Expertise - How savvy are you with web design or website building platforms?<BR>
+       Goals - What are your goals? Do you want to set up an online shop? A blog? A review site?<BR>
+        Integrations - Make sure the platform you're considering has all the integrations that you need.   These could include integrations to <BR>payment portals, email marketing tools, content syndication, or shopping carts.<BR>
+       SEO - Remember to check the technical setup of the site. Does your platform have all the technical aspects of SEO set up? Will search <BR>engines recognize and be able to easily crawl your site and rank it on relevant search results?<BR>
+       Answer these questions for yourself, do some research, and come up with three possible solutions for your website setup. That will make <BR>it easier for you to make a good decision. Once you select the best option, then you can dig deep into the requirements of that <BR>particular website builder or platform. And if you get stuck, you can always get a developer to help you finalize the project. </p><BR>
+        
+       <h2> Website Content Made Simple With TechyAk </h2><BR>
+       <p> When building a website, you need a tool that can take you from content keyword research to <BR>results. DemandJump automates the keyword research process.<BR>
+        
+        With one-click SEO content briefs for new content, recommendations for updating current content, and <BR>linking content to revenue generated with marketing attribution you are sure to see results.<BR>
+        
+        Work smarter with automation tools designed to make content marketers look like rockstars.<BR>
+        
+        Write content that ranks fast, and save time doing it - get started today!</p><BR>
+
+         <h2>Creative Website Design Ideas</h2><BR>
+        <p>
+          So if you are not sure and convenienced from this so I would highly recommend you to search for am <BR>other website like elemantor so Click on the button below to visit there.<BR>
+        </p>
+     </div>
+     <div class="Button">
+       
+        <a href="https://www.webdesign-inspiration.com/web-designs/style/creative" target="_blank" >
+        <button name="button" value="OK" type="button" onclick="hello()" > Click For More</button> 
+        <!-- <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "https://elementor.com/blog/web-design-ideas/";
+            };
+        </script> -->
+     </a>
+        
+        <!-- <script>
+            function hrefFunction(){
+            windows.location.href = "https://www.browserstack.com/guide/how-to-create-responsive-website";
+        }
+        </script> -->
+        
+
+ <!-- <script>
+    document.getElementById("mainBtn").addEventListener("click", redirectFunction);
+    
+    function redirectFunction(){
+        window.location.href = "https://elementor.com/blog/web-design-ideas/;
+        // You can also use window.location.replace method
+        
+        
+         window.location.replace("https://elementor.com/blog/web-design-ideas/");
+         
+    }
+ </script> -->
+
+        <!-- <a href="https://www.browserstack.com/guide/how-to-create-responsive-website">Click Here to Redirect</a> -->
+            
+        <!-- <form action="https://www.browserstack.com/guide/how-to-create-responsive-website" method="POST">
+            <input type="submit"/> -->
+         
+        
+      
+        
+        <script>
+            function hello(){
+         alert("This Will Redirect You")
+         
+        }
+        </script>
+        
+
+    </div>
+    <!-- <button aria-label="Toggle off canvas Navigation" type="button" class="nabar toggle"></button>
+    <span class="sr-only"></span>
+    <span class="icon-bar first"></span>
+    <br>
+    <span class="icon-bar middle"></span>
+    <br>
+    <span class="icon-bar last"></span>
+    <ul role="menu" class="active bench">
+        <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children arrow" role="none"></li>
+        <a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">
+            About
+        </a>
+    </ul>
+    <ul role="menubar" class="hs-menu-children-wrapper">
+        <li class="hs-menu-item hs-menu-depth-2" role="none">
+        </li>
+    </ul> -->
+    
+
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms And Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Techinal Team Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        
+                    </ul>
+                </div>
+                </div>
+                <div class="footer-col"> -->
+                    <!-- <h4></h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div> -->
+            <!-- </div> -->
+
+        <!-- </div>
+    </footer> --> 
+
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suport Team</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Language Courses</h4>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name"> Online Courses</li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                      </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="box input-box">
+            <li class="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email"></li>
+            <li><input type="button" value="Subscribe"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2023 <a href="#">TechyAk
+              MIT License
+  
+  Copyright (c) 2023 Techy-AK
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE. -->
+          <!-- </a>All rights reserved</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+   </footer> --> 
+
+
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online couses</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Front-End Developer</a></li>
+                    <li><a href="#">Back-End Developer</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+</html>

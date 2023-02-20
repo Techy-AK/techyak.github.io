@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Info</title>
+    <style>
+
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:300");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Arima Madurai", cursive;
+  color: black;
+  font-size: 4rem;
+  letter-spacing: -3px;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35rem;
+  background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("https://images.unsplash.com/photo-1446824505046-e43605ffb17f");
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem;
+}
+
+.bird {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
+  -webkit-animation-name: fly-cycle;
+          animation-name: fly-cycle;
+  -webkit-animation-timing-function: steps(10);
+          animation-timing-function: steps(10);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.bird--one {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.bird--two {
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+.bird--three {
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+.bird--four {
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.bird-container {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  -webkit-animation-name: fly-right-one;
+          animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.bird-container--one {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+.bird-container--two {
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.bird-container--three {
+  -webkit-animation-duration: 14.6s;
+          animation-duration: 14.6s;
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
+}
+.bird-container--four {
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  -webkit-animation-delay: 10.25s;
+          animation-delay: 10.25s;
+}
+
+@-webkit-keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+@-webkit-keyframes fly-right-one {
+  0% {
+    transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+@keyframes fly-right-one {
+  0% {
+    transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+@-webkit-keyframes fly-right-two {
+  0% {
+    transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+  }
+  10% {
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(-4vh) translateX(30vw) scale(0.6);
+  }
+  30% {
+    transform: translateY(1vh) translateX(50vw) scale(0.45);
+  }
+  40% {
+    transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.45);
+  }
+  51% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+}
+@keyframes fly-right-two {
+  0% {
+    transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+  }
+  10% {
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(-4vh) translateX(30vw) scale(0.6);
+  }
+  30% {
+    transform: translateY(1vh) translateX(50vw) scale(0.45);
+  }
+  40% {
+    transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+  }
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.45);
+  }
+  51% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+}
+
+.main{
+font-family: 'Dishonorable Mention: Comic Sans', cursive;
+color: rgba(0, 0, 0, 0.753);
+text-shadow: 15px rgb(226, 9, 9);
+padding: 100px;
+font-size: 20px;
+
+}
+.heading {
+  color: rgb(245, 235, 103);
+  text-shadow: 15px rgb(226, 9, 9);
+  padding: 50px;
+  
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <b><i><h1>More Info About Website Development</h1></i></b>
+    
+        <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+        </div>
+    
+        <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+        </div>
+    
+        <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+        </div>
+    
+        <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+        </div>
+    
+    </div>
+    <br>
+    <br>
+    
+      <br>
+    <br>
+    <div class="main">
+      <div class="heading">
+        <i><u><h2>10 Actionable Web Design Ideas</h2></u></i>
+      </div>
+      
+      <br><h3>When you’re feeling unmotivated, uninspired, or just plain stuck, here’s what you can do to get <br>those fresh web design ideas flowing again:</h3><br>
+      <br>
+      <br>
+      1. Put Together a Step-by-Step Process<br>
+      Working without a process can be extremely detrimental to a web designer’s flow — especially when you’re<br> in the weeds, feeling overwhelmed and struggling to come up with something new. <br><br>
+      
+      Rather than force your brain to work in overdrive all the time, create a step-by-step process that <br>removes this unnecessary clutter from your brain. <br><br>
+      
+      Better yet, create your plan and templatize it in your task management software so you can repurpose it<br> for all your jobs. <br><br>
+      
+      Trello, for example, is a free platform that makes documenting and organizing website projects super <br>easy: <br><br>
+
+      By laying out the details for each job into a framework like this, you’ll free your brain from having to <br> worry about or recall them. This should give you some space to start thinking creatively again. <br>
+      <br>
+    
+       <h3>2. Reacquaint Yourself With the Principles of Web Design</h3><br>
+When you’re trying to come up with creative web design ideas, it’s easy to get hung up on their newness. But <br>no one ever said that in order for a website to be good it needs to be completely new. <br><br>
+
+In fact, there’s a web design principle that deals with this subject. Jakob’s Law explains that: “Users spend <br>most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.”<br><br>
+
+If you find yourself obsessing over the newness or experimental nature of a website you’re working on, it’s a <br>good idea to stop what you’re doing and go review the basics of good UX. By taking it back to the <br><br>fundamentals, you’ll recenter your focus on what’s needed and then you can add creative touches later <br>on if they make sense. <br><br>
+
+ <h3>
+  3. Research the Most Recent Design Trends
+ </h3>
+    
+If you’re having the opposite problem and struggling to take the next step after building out a solid <br>foundation for your website, then spend some time researching recent design trends. <br><br>
+
+The face of the web is always changing, so much so that it can be hard to keep up with all of the trends <br>floating around. You never know what might happen if you start exploring them. <br><br>
+
+You can start with Elementor’s roundup of the latest web design trends: <br><br>
+ <ul>
+  <li>Elegant serif fonts</li>
+  <li>Playful typography effects​</li>
+  <li>Emojis</li>
+  <li>Light colour</li>
+  <li>Negative colour</li>
+  <li>Black-and-white textured illustrations</li>
+  <li>Black outlines</li>
+  <li>Simple shapes</li>
+  <li>Creative and atypical product photos</li>
+  <li>Collage art</li>
+  <li>Seamless surrealism</li>
+  <li>Hover gallery menus</li>
+ </ul>
+  
+ In addition to getting explanations of what these trends are and why they work so well, you’ll find examples <br>of websites that currently use them. Take some time to explore these sites and see what sort of inspiration <br>unfolds. <br><br>
+
+ <h3>4. Zero In on One Tiny Element</h3>
+ Are you familiar with Hick’s Law? This is another web design principle that can help you out. It states that: “The time it takes to make a decision increases with the number and complexity of choices.”<br><br>
+
+ While this is certainly applicable to how you present options on a website, it’s just as relevant to what <br>you’re dealing with now. Sometimes it’s hard to come up with new web design ideas when there are just too <br>many things to consider at once. <br><br>
+ 
+ Creating a web design process will help with this. However, you can get even more granular with your focus. <br>For example, rather than try to fill in all of the details at once on the Contact page:<br><br>
+
+ Start by zeroing in on the most important element on the page: The contact form. <br><br>
+
+
+ It’s much easier to get started when you narrow your focus to just the contact form. As you begin to hash out <br>the unique details of its design — typography and color choices, spacing, labels and placeholders, button <br>design, and so on — you’ll find it easy to expand your attention to the rest of the page when you’re done <br>with it.<br><br>
+
+  <h3>5. Switch From Desktop to Mobile</h3>
+
+  There’s something else you can try if you’re feeling restricted creatively by how much (or little) space you<br> have to work with. <br><br>
+
+If you normally start designing from the desktop view, switch to a tablet or smartphone. Or if you’ve grown <br>accustomed to starting with one of the smaller screens, scale up to desktop.<br><br>
+
+Switching to a different size canvas might be all you need to create the perfect vision for your website. <br>
+
+This would also be useful if you’re having a hard time deciding how you want to format the text on the page.<br> With desktop, it’s often hard to tell how long a header or paragraph really is. But once you scale it down the <br>size of a smartphone screen, you’ll realize that more can be done to improve the readability and flow of a <br>page. <br><br>
+
+<h3>6. Experiment With Extremes</h3>
+
+One reason you might be stuck on a particular website is that you haven’t found the perfect style for it. But <br>rather than try to tweak the same idea you or your client started with, go to the extreme and see if that jogs<br>something loose. <br><br>
+
+The opposite style might not be the exact solution needed, but it could inspire you to repurpose something <br>that does work and apply it to what you have so far. <br><br>
+
+Here are some things you might experiment with: <br><br>
+
+<ul>
+  <li>One-page vs. multi-page site</li>
+  <li>Photos vs. illustrations</li>
+  <li>Retro vs. modern typography</li>
+  <li>Text-only vs. image-heavy design</li>
+  <li>Monochromatic vs. analogous color palette</li>
+  <li>Animation vs. no animation</li>
+</ul>
+
+This could also be a really useful troubleshooting tactic if you’re tackling a website redesign and aren’t <br>quite sure what kind of alternative design to try next.<br><br>
+
+<h3>7. Work on a Website in a Different Niche</h3>
+
+There are a ton of benefits to niching down as a web designer. For starters, it’s much easier to make a name <br>for yourself as a great designer if you build websites for a targeted group of people. It can also make your <br>job easier as you’re not having to keep up with best practices and trends for every type of website you might <br>be asked to build. <br><br>
+
+That said, because you work on the same types of sites over and over again, it’s normal to feel nervous about <br>running out of creative approaches for them. If you’re experiencing this, one way to get unstuck is by taking <br>on a project outside of your niche. <br><br>
+
+For example, if you build websites for financial services companies, you’re probably used to creating very <br>buttoned-up designs that look like the one on the Popular Bank website:<br><br>
+
+There’s nothing wrong with designing websites that look like this for this niche. After all, when you’re <br>looking for someone to protect your money, the last thing you want is a website that suggests they might not<br> be that serious about it.<br><br>
+
+Now, let’s say you were to take on a website for a restaurant like Zuma:<br><br>
+
+
+This kind of project would provide you with a nice change of pace. You’d have to come up with ways to nicely <br>integrate menus, reservation systems, and lots of media into the design. You’d also get a chance to play <br>around with more dramatic color palettes and fonts.<br><br>
+
+There’s no need to completely pivot your business to a new niche if you’ve been feeling burned out. Just take <br>on a different project or two to challenge yourself. Giving yourself that outside experience might be all you<br> need to bring the spark of creativity back into your regular work.<br><br>
+
+<h3>8. Take a Course or Read a Tutorial</h3>
+
+Getting stuck on something because it’s too hard to build out or you’re unsure how to do it is always <br>stressful. But rather than keep attempting the same painful or ineffective method you’ve used before, hit the <br>“Pause” button and find out if someone has a better solution. <br><br>
+
+You’ll find answers to a lot of design issues and hurdles on the web — even ones you might not have expected <br>anyone else encountered. <br><br>
+
+You can certainly use Google to see what’s out there. Places like StackOverflow and even Reddit might be <br>helpful. However, more in-depth resources like courses and tutorials are going to be more helpful. Elementor <br>has a couple of resources you might find useful as well. <br><br>
+
+In this roundup of 17 online courses, you’ll find recommendations for web design and development courses that <br>cover a wide range of topics — responsive web design, A/B testing, visual hierarchy and spacing, and more. <br><br>
+
+If you’re struggling with typography, this collection of 20 typography tutorials will help. From the <br>psychology of fonts to pairing them, most of the big questions related to font design have been answered here.<br><br>
+
+<h3>9. Look at Other Creative Works</h3>
+
+
+There are a lot of places where you can find design ideas these days. Your email inbox. Your social media<br> feed. The ads littering the sidebars of the websites and blogs you visit.<br><br> 
+
+But rather than run all over the place trying to find something that helps you out of a creative fog, find <br>some bookmark-worthy design collection sites instead. You’ll spend less time hunting around for web design <br>ideas and you’ll always have access to the latest and greatest in good, creative design. Here are some sites <br>to start with:<br><br>
+
+<h3>Dribbble</h3>
+
+You’ll find all kinds of creative work examples on Dribbble. Just don’t relegate yourself strictly to the “Web <br>Design” section. Take a look at other works uploaded to the site and see what sort of unique designs you can <br>find.<br>
+
+<h3>Behance</h3>
+
+Behance is another site that’ll give you the chance to explore work in other areas, like photography, <br>architecture, and fashion. What’s more, you’ll find video, audio, and animation here, so it’s not just static <br>imagery you can draw inspiration from<br><br>
+
+<h3>Awwwards</h3>
+
+If you’d prefer to get your inspiration from real websites, Awwwards.com is a good place to find them. Go to <br>the menu and you’ll find a variety of collections of award-winning sites, pages, and components to inspire you.<br><br>
+
+<h3>Daily Design Inspiration Sites</h3>
+
+There are a number of sites dedicated 100% to providing you with design inspiration, like Web Design<br> Inspiration in the screenshot above. Siteinspire is another good one to bookmark specifically for web design<br> ideas while Designspiration has inspiring works across a variety of genres.<br><br>
+
+<h3>Really Good Emails</h3>
+
+Although Really Good Emails only rounds up the best of the best in email marketing design, these designs <br>aren’t all that different from what you’d design for a site. And because they’re built for a slimmer space,<br> you might get some ideas on how to be more concise with your designs.<br><br>
+
+<h3>10. Go for a Walk</h3>
+
+Sometimes sitting in front of your computer is only going to make things worse when you’re feeling stuck or <br>uncreative. According to a Stanford University study done in 2014, walking boosts creative thinking. <br><br>
+
+The study compared participants in both seated settings as well as a number of walking situations (e.g. on a <br>treadmill, outdoors, etc.). It found that creative output increased by 60% when someone was walking. <br><br>
+
+While this particular study found that it doesn’t matter whether you stay indoors or go outdoors to reap the<br> benefits of walking, detaching from your technologies and heading outside is a good idea. <br><br>
+
+A 2020 study out of Cornell University found that nature on its own has mind healing benefits as well. All <br>that’s needed is 10 to 50 minutes of time spent in natural spaces to improve one’s focus, mood, blood <br>pressure, and heart rate.<br><br>
+
+If you don’t have easy access to nature, that’s okay. You can still get inspired by your surroundings — <br>building signage, vehicles passing you by, other people walking about, and so on.<br><br>
+
+<h3>Overcome That Designer’s Block With Great Web Design Ideas</h3>
+
+When you design websites for a living, it’s only natural to get stuck from time to time. But rather than keep<br> your head down and try to force the ideas to come, try something different.<br><br> 
+
+With the 10 brainstorming tips above, you’re sure to come up with some fresh and creative web design ideas<br> that are perfect for your client’s website. <br><br>
+    </div>
+</body>
+</html>
